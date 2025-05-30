@@ -10,12 +10,12 @@ author: Miao Sun
 description: "Midlife career change: a disaster or an opportunity?"
 ---
 
-The field of machine learning has seen a recent surge of interest in **State Space Model (SSM)**-based architectures for handling sequential data. For an extended period, **Transformer models** were the de facto standard in sequence modeling, lauded for their powerful representational abilities. However, the continuous expansion of model scales has highlighted a critical limitation: the Transformers' inherent quadratic complexity. This characteristic translates directly into considerable computational resource and energy consumption overhead, which has become a significant bottleneck for their continued development and deployment.
+The field of machine learning has seen a recent surge of interest in **State Space Model (SSM)**-based architectures for handling sequential data. For an extended period, **Transformer models** were the de facto standard in sequence modeling, lauded for their powerful representational abilities. However, the continuous expansion of model scales has highlighted a critical limitation: the Transformers' inherent quadratic complexity with respect to token length. This characteristic translates directly into considerable computational resource and energy consumption overhead, which has become a significant bottleneck for their continued development and deployment.
 
 Amidst these challenges, **Mamba**, a newly introduced sequence-to-sequence SSM architecture, has demonstrated exceptional capabilities, surpassing existing model frameworks. It not only achieves comparable accuracy to Transformer models on diverse tasks but also offers a substantial leap in computational efficiency, leading to significant reductions in training and inference costs.
 
 ![complexity](.\assets\img\posts\20210324\complexity_table.png)
-<center>Computation Complexity: D is the number of states and L is the sequence length.</center>
+<center> Computational Complexity: $D$ is the number of states and $L$ is the sequence length. Transformers' complexity expands quadratically ($O(L^2)$) with the length of input tokens, while Mamba's complexity is linear ($O(L)$).</center>
 
 Leveraging their high computational intensity and robust sequential modeling capabilities, the Mamba family of architectures has found widespread application, ranging from lightweight detection tasks to large language models (LLMs). Recently, Alab21 launched a Mamba-Transformer-based hybrid LLM model, which strategically combines the attention mechanism of the Transformer with the SSM sequential modeling of Mamba.
 
