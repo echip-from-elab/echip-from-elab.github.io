@@ -217,7 +217,7 @@ Customize the site fonts. Modify `/assets/css/main.css` as follows:
   --font1-bold:       600;
   --font2-light:      200;
   --font2-regular:    400;
-  --font2-bold:       700;
+  --font2-bold:       400;
 ...
 ```
 If you change the fonts, you need to also modify `/_includes/head.html` as follows:
