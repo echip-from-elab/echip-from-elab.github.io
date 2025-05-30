@@ -27,11 +27,11 @@ The main contributions of this work are focused on:
 - The design of a heterogeneous Mamba accelerator integrated with a RISC-V based MCU controller and a compute-in-memory (CIM) block, intended for a chiplet-based, scale-up high-performance computing architecture.
 - A comparative analysis of the Mamba sequential block against CNN and Vision Transformer (ViT) implementations, presenting hardware measurements obtained on GF 22 nm technology.
 
-![echip-V2](.\assets\img\posts\20210324\mamba_arch.svg)
+![echip-V1](.\assets\img\posts\20210324\mamba_arch.svg)
 <center>The designed architecture for MAMBA block.</center>{: .img-responsive width="1000" height="600"}
 
 When compared to **Transformer** and **CNN models** with similar modeling capacity, the proposed design exhibits **higher energy efficiency** and **lower area overhead**. A dedicated pipeline design implements the complex dataflow and scanning mechanism, which has been verified through front-end simulation. To achieve full ASIC verification and implementation, the designed accelerator successfully completed its first tape-out process in early May using the **GF 22nm technology node**. The core design measures **0.5913 mm × 0.5917 mm**. Our eMamba implementation operates at **100MHz** with a **0.8V** supply voltage, consuming a total power of **13.49mW**.
-![echip-V2](.\assets\img\posts\20210324\layout.png){: .img-responsive width="300" height="300"}
+![layout](.\assets\img\posts\20210324\layout.png){: .img-responsive width="300" height="300"}
 <center>Layout of the e-chip-V1. </center>
 
 In parallel, to lay the groundwork for a chiplet design within a scale-up roadmap incorporating heterogeneous Network-on-Chip (NoC) for an upcoming tape-out in November, a CIM based Mamba accelerator featuring a superscalar RISC-V core (designed to support high-computation-intensity instruction sets) is currently under development. To enable a truly efficient, high-performance solution for the Mamba-Transformer hybrid model, a scale-out domain-specific accelerator NoC is actively being pursued.
