@@ -214,7 +214,7 @@ Customize the site fonts. Modify `/assets/css/main.css` as follows:
   --font2: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* headers and titles   */
   --font1-light:      400;
   --font1-regular:    400;
-  --font1-bold:       600;
+  --font1-bold:       400;
   --font2-light:      200;
   --font2-regular:    400;
   --font2-bold:       400;
