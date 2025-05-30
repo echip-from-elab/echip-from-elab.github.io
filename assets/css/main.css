@@ -598,7 +598,7 @@ svg {
   top: 0;
   left: 0;
   z-index: 10;
-  width: 300px;
+  width: 500px;
   height: 100%;
   background-color: var(--background);
   padding: 25px 30px;
