@@ -15,7 +15,7 @@ The field of machine learning has seen a recent surge of interest in **State Spa
 Amidst these challenges, **Mamba**, a newly introduced sequence-to-sequence SSM architecture, has demonstrated exceptional capabilities, surpassing existing model frameworks. It not only achieves comparable accuracy to Transformer models on diverse tasks but also offers a substantial leap in computational efficiency, leading to significant reductions in training and inference costs.
 
 ![complexity](.\assets\img\posts\20210324\complexity_table.png)
-<center> Computational Complexity: $$D$$ is the number of states and $L$ is the sequence length. Transformers' complexity expands quadratically ($O(L^2)$) with the length of input tokens, while Mamba's complexity is linear ($O(L)$).</center>
+<center> Computational Complexity: $D$ is the number of states and $L$ is the sequence length. Transformers' complexity expands quadratically (O(L^2)) with the length of input tokens, while Mamba's complexity is linear (O(L)).</center>
 
 Leveraging their high computational intensity and robust sequential modeling capabilities, the Mamba family of architectures has found widespread application, ranging from lightweight detection tasks to large language models (LLMs). Recently, Alab21 launched a Mamba-Transformer-based hybrid LLM model, which strategically combines the attention mechanism of the Transformer with the SSM sequential modeling of Mamba.
 
