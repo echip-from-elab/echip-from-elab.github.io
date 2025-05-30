@@ -23,7 +23,7 @@ quantization for the other layers, aiming to achieve a more balanced quantizatio
 - the existing two studies, we compare eMamba against CNN and ViT implementations and present
 hardware measurements on GF 22 nm. 
 
-![echip-V2](.\assets\img\posts\20210324\mamba_arch.png)
+![echip-V2](.\assets\img\posts\20210324\mamba_arch.svg)
 <center>The designed architecture for MAMBA block.</center>
 
 
@@ -33,7 +33,7 @@ Compared with the similar modelling capacity of transfomer and CNN, a higher ene
 
  At the same time, to pave the way for the chiplet design for the  scale-up roadmap in the next tapeout for heterogeneous NoC, which will lanch in November this year. A self-designed RISC-V core with a compute-in-memory coprocessor for the instructions processing and tokein embedding is verfied as the seperated module. For a efficient high performance solution for mamba-transformer hybrid model, a scale-out  accelerator NoC is on the way.
 
-![echip-V2](.\assets\img\posts\20210324\echip_v2.png)
+![echip-V2](.\assets\img\posts\20210324\echip_v2.svg)
 <center>The conception design of e-chip-V2.</center>
 
 Thanks for reading !
