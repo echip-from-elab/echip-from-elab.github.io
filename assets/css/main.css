@@ -23,7 +23,7 @@ html {
   --font1-bold:       600;
   --font2-light:      200;
   --font2-regular:    400;
-  --font2-bold:       700;
+  --font2-bold:       400;
 }
 
 html[data-theme="dark"]  {
