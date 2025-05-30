@@ -1530,14 +1530,14 @@ img + small, img + br + small {
 }
 
 .page-footer .page-tag a:hover {
-  opacity: .8;
+  opacity: .9;
 }
 
 .page-footer .page-share a {
   text-decoration: none;
   color: var(--grey2);
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .page-footer .page-share a:hover {
