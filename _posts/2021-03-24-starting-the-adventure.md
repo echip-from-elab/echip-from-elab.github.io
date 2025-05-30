@@ -28,7 +28,7 @@ The main contributions of this work are focused on:
 - A comparative analysis of the Mamba sequential block against CNN and Vision Transformer (ViT) implementations, presenting hardware measurements obtained on GF 22 nm technology.
 
 ![echip-V2](.\assets\img\posts\20210324\mamba_arch.svg)
-<center>The designed architecture for MAMBA block.</center>{: .img-responsive width="700" height="400"}
+<center>The designed architecture for MAMBA block.</center>{: .img-responsive width="900" height="500"}
 
 When compared to **Transformer** and **CNN models** with similar modeling capacity, the proposed design exhibits **higher energy efficiency** and **lower area overhead**. A dedicated pipeline design implements the complex dataflow and scanning mechanism, which has been verified through front-end simulation. To achieve full ASIC verification and implementation, the designed accelerator successfully completed its first tape-out process in early May using the **GF 22nm technology node**. The core design measures **0.5913 mm × 0.5917 mm**. Our eMamba implementation operates at **100MHz** with a **0.8V** supply voltage, consuming a total power of **13.49mW**.
 ![echip-V2](.\assets\img\posts\20210324\layout.png){: .img-responsive width="300" height="300"}
@@ -39,4 +39,3 @@ In parallel, to lay the groundwork for a chiplet design within a scale-up roadma
 ![echip-V2](.\assets\img\posts\20210324\echip_v2.svg)
 <center>The conception design of e-chip-V2.</center>
 
-Thanks for reading !
