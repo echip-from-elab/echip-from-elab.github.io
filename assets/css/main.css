@@ -18,12 +18,12 @@ html {
   --github:       #333;
   --font1: 'Lora', charter, Georgia, Cambria, 'Times New Roman', Times, serif;/* body text */
   --font2: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* headers and titles   */
-  --font1-light:      200;
-  --font1-regular:    200;
-  --font1-bold:       200;
-  --font2-light:      200;
-  --font2-regular:    200;
-  --font2-bold:       200;
+  --font1-light:      100;
+  --font1-regular:    100;
+  --font1-bold:       100;
+  --font2-light:      100;
+  --font2-regular:    100;
+  --font2-bold:       100;
 }
 
 html[data-theme="dark"]  {
