@@ -10,28 +10,31 @@ author: Miao Sun
 description: "Midlife career change: a disaster or an opportunity?"
 ---
 
-State Space Model (SSM)-based machine learning architectures have recently gained significant attention for processing sequential data. For a long time, Transformer models dominated sequence modeling due to their powerful capabilities. However, as model scales continuously expand, the Transformers' inherent quadratic complexity leads to significant computational resource and energy consumption overhead, which has become a bottleneck for their further development.
+The field of machine learning has seen a recent surge of interest in **State Space Model (SSM)**-based architectures for handling sequential data. For an extended period, **Transformer models** were the de facto standard in sequence modeling, lauded for their powerful representational abilities. However, the continuous expansion of model scales has highlighted a critical limitation: the Transformers' inherent quadratic complexity. This characteristic translates directly into considerable computational resource and energy consumption overhead, which has become a significant bottleneck for their continued development and deployment.
 
-Against this backdrop, Mamba, a recently introduced sequence-to-sequence SSM architecture, demonstrates superior capabilities beyond existing model frameworks. It achieves comparable accuracy to Transformer models on various tasks while significantly improving computational efficiency, substantially reducing training and inference costs.
+Amidst these challenges, **Mamba**, a newly introduced sequence-to-sequence SSM architecture, has demonstrated exceptional capabilities, surpassing existing model frameworks. It not only achieves comparable accuracy to Transformer models on diverse tasks but also offers a substantial leap in computational efficiency, leading to significant reductions in training and inference costs.
 
 ![complexity](.\assets\img\posts\20210324\complexity_table.png)
 <center>Computation Complexity: D is the number of states and L is the sequence length.</center>
 
-Benifits from the high computation intensity and the sequential modeling ablity, the mamba family has been employed widely in multiple applications from the light-weight detection  tasks to LLMs. Recently, the mamba-transformer based hybrid LLM model has been lanched by Alab21, which combine the abilities of the attention mechinism from transformer model and the SSM sequencing modelling from MAMBA. However, while Mamba has made algorithmic breakthroughs, fully unleashing its potential and making it widely applicable requires hardware acceleration. Recently, the research team led by Prof. Umit Yusuf Ogras and Assistant Prof. Ahkilesh Jasiwal has designed the fisrt ASIC targered MAMBA-Chiplet with the accelerator for SSM in sequencing model processing. Differnet from the traditional accelertors design for transformer block and CNN, a dedicated pipeline design for hidden state updating and serial scanning is implemented. Meanwhile, to process the non-linear activation function and exponents calculation from the MAMBA block, a hardware frinedly approximation optimizaiton method is proposed for addressing the computation and area overhead. The main contributions in this works foucs on:
-- a scale-aware quantization for the SSM layer coupled with general 8-bit
-quantization for the other layers, aiming to achieve a more balanced quantization strategy. Unlike
-- the existing two studies, we compare eMamba against CNN and ViT implementations and present
-hardware measurements on GF 22 nm. 
+Leveraging their high computational intensity and robust sequential modeling capabilities, the Mamba family of architectures has found widespread application, ranging from lightweight detection tasks to large language models (LLMs). Recently, Alab21 launched a Mamba-Transformer-based hybrid LLM model, which strategically combines the attention mechanism of the Transformer with the SSM sequential modeling of Mamba.
+
+However, despite Mamba's algorithmic breakthroughs, fully realizing its potential and ensuring broad applicability demands dedicated hardware acceleration. In this context, the research team led by Prof. Umit Yusuf Ogras and Assistant Prof. Akhilesh Jaiswal has developed the first ASIC-targeted Mamba-Chiplet, incorporating an accelerator specifically designed for SSM in sequence model processing. Diverging from traditional accelerator designs for Transformer blocks and CNNs, this work implements a dedicated pipeline for hidden state updating and serial scanning. Furthermore, to efficiently process the non-linear activation functions and exponent calculations inherent to the Mamba block, a hardware-friendly approximation optimization method is proposed to address associated computational and area overheads.
+
+The main contributions of this work are focused on:
+
+- A scale-aware quantization strategy for the SSM layer, coupled with general 8-bit quantization for other layers, aiming to achieve a more balanced quantization approach.
+- The design of a heterogeneous Mamba accelerator integrated with a RISC-V based MCU controller and a compute-in-memory (CIM) block, intended for a chiplet-based, scale-up high-performance computing architecture.
+- A comparative analysis of the Mamba sequential block against CNN and Vision Transformer (ViT) implementations, presenting hardware measurements obtained on GF 22 nm technology.
 
 ![echip-V2](.\assets\img\posts\20210324\mamba_arch.svg)
 <center>The designed architecture for MAMBA block.</center>{: .img-responsive width="700" height="400"}
 
-
-Compared with the similar modelling capacity of transfomer and CNN, a higher energy efficiency and lower area overhead is observed. For a deticated pipeline design, the complex dataflow and the scanning mechanism is realized and verified in frountend simulation. Aiming for a fully ASIC target verfication and implementation, the designed accelerator has completed the first tapeout process in early May in GF 22nm technology node. The core design dimensions are 0.5913 mm × 0.5917 mm. Our eMamba implementation operates at 100MHz frequency with 0.8 V supply voltage, consuming a total power of 13.49mW.
+When compared to **Transformer** and **CNN models** with similar modeling capacity, the proposed design exhibits **higher energy efficiency** and **lower area overhead**. A dedicated pipeline design implements the complex dataflow and scanning mechanism, which has been verified through front-end simulation. To achieve full ASIC verification and implementation, the designed accelerator successfully completed its first tape-out process in early May using the **GF 22nm technology node**. The core design measures **0.5913 mm × 0.5917 mm**. Our eMamba implementation operates at **100MHz** with a **0.8V** supply voltage, consuming a total power of **13.49mW**.
 ![echip-V2](.\assets\img\posts\20210324\layout.png){: .img-responsive width="300" height="300"}
 <center>Layout of the e-chip-V1. </center>
 
- At the same time, to pave the way for the chiplet design for the  scale-up roadmap in the next tapeout for heterogeneous NoC, which will lanch in November this year. A self-designed RISC-V core with a compute-in-memory coprocessor for the instructions processing and tokein embedding is verfied as the seperated module. For a efficient high performance solution for mamba-transformer hybrid model, a scale-out  accelerator NoC is on the way.
+In parallel, laying the groundwork for a chiplet design within a scale-up roadmap that includes heterogeneous Network-on-Chip (NoC) for an upcoming tape-out in November, a proprietary RISC-V core with an integrated compute-in-memory coprocessor—responsible for instruction processing and token embedding—has been independently verified as a standalone module. To enable a truly efficient, high-performance solution for the Mamba-Transformer hybrid model, a scale-out accelerator NoC is actively being pursued.
 
 ![echip-V2](.\assets\img\posts\20210324\echip_v2.svg)
 <center>The conception design of e-chip-V2.</center>
