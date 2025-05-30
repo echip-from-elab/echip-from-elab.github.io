@@ -1213,7 +1213,7 @@ path.fa-secondary {
 }
 .toc-title{display:none}
 .toc-title svg {
-  width: 5px;
+  width: 25px;
   margin-bottom:1em
 }
 .toc-content{
@@ -1489,7 +1489,7 @@ img + small, img + br + small {
 }
 .header-page h1 {
   font-weight: var(--font2-regular);
-  font-size: 4.25rem;
+  font-size: 0.8rem;
   text-align: left;
   margin: 0 0 10px;
   color: var(--text)
