@@ -28,7 +28,7 @@ hardware measurements on GF 22 nm.
 
 
 Compared with the similar modelling capacity of transfomer and CNN, a higher energy efficiency and lower area overhead is observed. For a deticated pipeline design, the complex dataflow and the scanning mechanism is realized and verified in frountend simulation. Aiming for a fully ASIC target verfication and implementation, the designed accelerator has completed the first tapeout process in early May in GF 22nm technology node. The core design dimensions are 0.5913 mm × 0.5917 mm. Our eMamba implementation operates at 100MHz frequency with 0.8 V supply voltage, consuming a total power of 13.49mW.
-![echip-V2](.\assets\img\posts\20210324\layout.png)
+![echip-V2](.\assets\img\posts\20210324\layout.png){: .img-responsive width="300" height="300"}
 [3]: Layout of the e-chip-V1. 
 
  At the same time, to pave the way for the chiplet design for the  scale-up roadmap in the next tapeout for heterogeneous NoC, which will lanch in November this year. A self-designed RISC-V core with a compute-in-memory coprocessor for the instructions processing and tokein embedding is verfied as the seperated module. For a efficient high performance solution for mamba-transformer hybrid model, a scale-out  accelerator NoC is on the way.
