@@ -581,7 +581,7 @@ svg {
           align-items: center;
 }
 .main-header .logo {
-  width: 60%;
+  width: 150%;
   position: relative;
   text-align: center;
   color:var(--main);
@@ -943,7 +943,7 @@ svg.menu-icon-house {
   transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
 }
 .logo-link:hover{
-  transform: scale(1.2);
+  transform: scale(1.5);
   opacity: 0.6;
   color: var(--main);
 }
