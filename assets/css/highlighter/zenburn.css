@@ -22,7 +22,7 @@ color:#41706f;
 
 .highlight .cs {
 color:#cd0000;
-font-weight:700;
+font-weight:400;
 }
 
 .highlight .gd {
@@ -44,12 +44,12 @@ color:gray;
 
 .highlight .gs {
 color:#ccc;
-font-weight:700;
+font-weight:400;
 }
 
 .highlight .gu {
 color:purple;
-font-weight:700;
+font-weight:400;
 }
 
 .highlight .gt {
@@ -66,7 +66,7 @@ color:#ffff86;
 
 .highlight .kn {
 color:#dfaf8f;
-font-weight:700;
+font-weight:400;
 }
 
 .highlight .kp {
@@ -83,7 +83,7 @@ color:#c28182;
 
 .highlight .ne {
 color:#c3bf9f;
-font-weight:700;
+font-weight:400;
 }
 
 .highlight .nn {
@@ -112,7 +112,7 @@ color:#f0efd0;
 
 .highlight .gh,.preview-zenburn .highlight .gp {
 color:#dcdccc;
-font-weight:700;
+font-weight:400;
 }
 
 .highlight .gi,.preview-zenburn .highlight .kt {
