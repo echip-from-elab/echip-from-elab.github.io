@@ -34,7 +34,7 @@ When compared to **Transformer** and **CNN models** with similar modeling capaci
 ![echip-V2](.\assets\img\posts\20210324\layout.png){: .img-responsive width="300" height="300"}
 <center>Layout of the e-chip-V1. </center>
 
-In parallel, laying the groundwork for a chiplet design within a scale-up roadmap that includes heterogeneous Network-on-Chip (NoC) for an upcoming tape-out in November, a proprietary RISC-V core with an integrated compute-in-memory coprocessor—responsible for instruction processing and token embedding—has been independently verified as a standalone module. To enable a truly efficient, high-performance solution for the Mamba-Transformer hybrid model, a scale-out accelerator NoC is actively being pursued.
+In parallel, to lay the groundwork for a chiplet design within a scale-up roadmap incorporating heterogeneous Network-on-Chip (NoC) for an upcoming tape-out in November, a CIM based Mamba accelerator featuring a superscalar RISC-V core (designed to support high-computation-intensity instruction sets) is currently under development. To enable a truly efficient, high-performance solution for the Mamba-Transformer hybrid model, a scale-out domain-specific accelerator NoC is actively being pursued.
 
 ![echip-V2](.\assets\img\posts\20210324\echip_v2.svg)
 <center>The conception design of e-chip-V2.</center>
