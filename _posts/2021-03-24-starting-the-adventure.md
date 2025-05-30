@@ -2,26 +2,21 @@
 layout: post
 read_time: true
 show_date: true
-title: "Starting the adventure"
-date: 2021-03-24
-img: posts/20210324/starting_adventure.jpg
-tags: [general blogging, thoughts, life]
-author: Armando Maynez
+title: "First chiplet for mamba-based nerual networks in GF 22nm technology"
+date: 2025-05-29
+img: posts/20210324/mamba_ssm.gif
+tags: [state space model, low computation complexity, edge-computing]
+author: Miao Sun
 description: "Midlife career change: a disaster or an opportunity?"
 ---
-In the midst of a global pandemic caused by the SARS-COV2 coronavirus; I decided to start blogging. I wanted to blog since a long time, I have always enjoyed writing, but many unknowns and having "no time" for it prevented me from taking it up. Things like: "I don't really know who my target audience is", "what would my topic or topics be?", "I don't think I am a world-class expert in anything", and many more kept stopping me from setting up my own blog. Now seemed like a good time as any so with those and tons of other questions in my mind I decided it was time to start.
+State Space Model (SSM)-based machine learning architectures have recently gained significant attention for processing sequential data. For a long time, Transformer models dominated sequence modeling due to their powerful capabilities. However, as model scales continuously expand, the Transformers' inherent quadratic complexity leads to significant computational resource and energy consumption overhead, which has become a bottleneck for their further development.
 
-Funnily, this is not my first post. The birth of the blog came very natural as a way to "document" my newly established pursuit for getting myself into Machine Learning. This new adventure of mine comprises several things, and if I want to succeed I need to be serious about them all:
-- I want to start coding again! I used to code a long time ago, starting when I was 8 years old in a Tandy Color Computer hooked up to my parent's TV.
-- Machine Learning is a vast, wide subject, I want to learn the generals, but also to select a few areas to focus on.
-- Setting up a blog to document my journey and share it:
-- Establish a learning and blogging routine. If I don't do this, I am sure this endeavour will die off soon.
+Against this backdrop, Mamba, a recently introduced sequence-to-sequence SSM architecture, demonstrates superior capabilities beyond existing model frameworks. It achieves comparable accuracy to Transformer models on various tasks while significantly improving computational efficiency, substantially reducing training and inference costs.
 
-As for the focus areas I will start with:
-- Neural Networks fundamentals: history, basic architecture and math behind them
-- Deep Neural Networks
-- Reinforcement Learning
-- Current state of the art: what is at the cutting edge now in terms of Deep Neural Networks and Reinforcement Learning?
+| Phase   | Transformer       | Mamba             |
+| :------ | :--------------   | :----------       |
+| Prefill | $O(L^2 \times D)$ | $O(L \times D^2)$ |
+| Decode  | $O(L \times D)$   | $O(D^2)$          |
   
 I selected the above areas to focus on based on my personal interests, I have been fascinated by the developments in reinforcement learning for a long time, in particular [Deep Mind's](https://deepmind.com/blog) awesome [Go](https://deepmind.com/blog/article/innovations-alphago), [Chess](https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go) and [Starcraft](https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning) playing agents. Therefore, I started reading a lot about it and even started a personal project for coding a [tic-tac-toe learning agent](./deep-q-learning-tic-tac-toe.html).
 
