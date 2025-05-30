@@ -24,7 +24,7 @@ quantization for the other layers, aiming to achieve a more balanced quantizatio
 hardware measurements on GF 22 nm. 
 
 ![echip-V2](.\assets\img\posts\20210324\mamba_arch.svg)
-<center>The designed architecture for MAMBA block.</center>
+<center>The designed architecture for MAMBA block.</center>{: .img-responsive width="700" height="400"}
 
 
 Compared with the similar modelling capacity of transfomer and CNN, a higher energy efficiency and lower area overhead is observed. For a deticated pipeline design, the complex dataflow and the scanning mechanism is realized and verified in frountend simulation. Aiming for a fully ASIC target verfication and implementation, the designed accelerator has completed the first tapeout process in early May in GF 22nm technology node. The core design dimensions are 0.5913 mm × 0.5917 mm. Our eMamba implementation operates at 100MHz frequency with 0.8 V supply voltage, consuming a total power of 13.49mW.
