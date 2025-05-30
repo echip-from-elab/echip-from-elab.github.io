@@ -1482,7 +1482,7 @@ img + small, img + br + small {
     display: block;
     margin: auto;
 }
-
+/* this is the post title font changing location, miao */
 .header-page {
   position: relative;
   margin-bottom: 1em;
