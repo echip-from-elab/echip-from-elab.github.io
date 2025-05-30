@@ -30,6 +30,7 @@ layout: default
         {% if page.toc %}{% include sidebar-toc.html %}{% endif %}
         {{page.content | markdownify}}
         {% include sidebar.html context="post" class="inline" id="post-end" %}
+        <div class="separator"></div>
         {% include recent-post.html %}
         {% include comments.html %}
       </div>
