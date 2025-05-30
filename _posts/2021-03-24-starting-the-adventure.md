@@ -2,7 +2,7 @@
 layout: post
 read_time: true
 show_date: true
-title: "First chiplet for mamba-based nerual networks in GF 22nm technology"
+title: "First Mamba chiplet in GF 22nm"
 date: 2025-05-29
 img: posts/20210324/mamba_ssm.gif
 tags: [state space model, low computation complexity, edge-computing]
