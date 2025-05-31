@@ -39,7 +39,7 @@
     function handleThemeToggle(nightShift) {
     themeData.nightShift = nightShift;
     saveThemeData(themeData);
-    html.dataset.theme = nightShift ? 'light' : 'dark';
+    html.dataset.theme = nightShift ? 'light' : 'light';
     if (nightShift) {
         logo.setAttribute("src", "{{ logo_url_dark }}");
     } else {
