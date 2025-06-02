@@ -22,7 +22,7 @@ The field of machine learning has seen a recent surge of interest in **State Spa
 Amidst these challenges, **Mamba**, a newly introduced sequence-to-sequence SSM architecture, has demonstrated exceptional capabilities, surpassing existing model frameworks. It not only achieves comparable accuracy to Transformer models on diverse tasks but also offers a substantial leap in computational efficiency, leading to significant reductions in training and inference costs.
 
 <div align="center">
-  <img src="https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210324/complexity_table.png?raw=true" width="400" height="100">
+  <img src="https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210324/complexity_table.png?raw=true" width="400" height="90">
 </div>
 <!-- ![complexity](https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210324/complexity_table.png) -->
 <center> Computational Complexity: D is the number of states and L is the sequence length. Transformers' complexity expands quadratically with the length of input tokens, while Mamba's complexity is linear.</center>
@@ -40,9 +40,9 @@ The main contributions of this work are focused on:
 <div align="center">
   <img src="https://raw.githubusercontent.com/echip-from-elab/echip-from-elab.github.io/643a8e7e51cb50c9bde0ca8994eb8a66adefb1da/assets/img/posts/20210324/mamba_arch.svg" width="800" height="300">
 </div>
-<center>The designed architecture for MAMBA block.</center>
+<center>The designed accelerator architecture for MAMBA block.</center>
 <br>
-When compared to Transformer and CNN models with similar modeling capacity, the proposed design exhibits higher energy efficiency and lower area overhead. A dedicated pipeline design implements the complex dataflow and scanning mechanism, which has been verified through front-end simulation. To achieve full ASIC verification and implementation, the designed accelerator successfully completed its first tape-out process in early May implemented in the GF 22nm technology node. The core design measures 0.5913 mm × 0.5917 mm. Our eMamba implementation operates at 100MHz with a 0.8V supply voltage, consuming a total power of 13.49mW.
+When compared to Transformer and CNN models with similar modeling capacity, the proposed design exhibits higher energy efficiency and lower area overhead. A dedicated pipeline design implements the complex dataflow and scanning mechanism, which has been verified through front-end simulation. To achieve full ASIC verification and implementation, the designed accelerator successfully completed its first tape-out process in early May implemented in the GF 22nm technology node. The core design measures 0.5913 mm × 0.5917 mm. Our design for Mamba implementation operates at 100MHz with a 0.8V supply voltage, consuming a total power of 13.49mW.
 <br>
 <br>
 <div align="center">
@@ -50,7 +50,7 @@ When compared to Transformer and CNN models with similar modeling capacity, the 
 </div>
 <center>Layout of the e-chip-V1. </center>
 <br>
-In parallel, to lay the groundwork for a chiplet design within a scale-up roadmap incorporating heterogeneous Network-on-Chip (NoC) for an upcoming tape-out in November, a CIM based Mamba accelerator featuring a superscalar RISC-V core (designed to support high-computation-intensity instruction sets) is currently under development. To enable a truly efficient, high-performance solution for the Mamba-Transformer hybrid model, a scale-out domain-specific accelerator NoC is actively being pursued.
+As part of our scale-up roadmap, a chiplet design featuring a CIM-based Mamba accelerator integrated with a superscalar RISC-V core (designed for high-computation-intensity instruction sets) is under development, targeting an upcoming November tape-out. This effort, incorporating heterogeneous Network-on-Chip (NoC), runs in parallel with our active pursuit of a high-throughput domain-specific accelerator NoC to enable a truly efficient, high-performance solution for the Mamba-Transformer hybrid model.
 <br>
 <div align="center">
   <img src="https://raw.githubusercontent.com/echip-from-elab/echip-from-elab.github.io/643a8e7e51cb50c9bde0ca8994eb8a66adefb1da/assets/img/posts/20210324/echip_v2.svg">
