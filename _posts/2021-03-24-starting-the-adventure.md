@@ -4,7 +4,8 @@ read_time: true
 show_date: true
 title: "First Mamba chiplet in GF 22nm"
 date: 2025-05-29
-img: posts/20210324/mamba_ssm.gif
+img: posts/20210324/static_mamba.jpg
+# img: posts/20210324/mamba_ssm.gif
 tags: [state space model, low computation complexity, edge-computing]
 author: Miao Sun
 description: "Midlife career change: a disaster or an opportunity?"
