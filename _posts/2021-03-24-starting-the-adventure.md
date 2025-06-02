@@ -13,8 +13,8 @@ description: "Midlife career change: a disaster or an opportunity?"
 
 
 <!-- PDF generation  -->
-# First Mamba chiplet in GF 22nm
-![frontpage](https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210324/static_mamba.jpg?raw=true)
+<!-- # First Mamba chiplet in GF 22nm
+![frontpage](https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210324/static_mamba.jpg?raw=true) -->
 <!-- PDF generation  -->
 
 The field of machine learning has seen a recent surge of interest in **State Space Model (SSM)**-based architectures for handling sequential data. For an extended period, **Transformer models** were the de facto standard in sequence modeling, lauded for their powerful representational abilities. However, the continuous expansion of model scales has highlighted a critical limitation: the Transformers' inherent quadratic complexity with respect to token length. This characteristic translates directly into considerable computational resource and energy consumption overhead, which has become a significant bottleneck for their continued development and deployment.
