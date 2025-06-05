@@ -1437,7 +1437,7 @@ tweet a {
   padding: 0;
   margin: 0;
   height: 200px;
-  width: 70%;
+  width: 150%;
   background-color: var(--background);
   overflow: hidden;
 }
@@ -1451,7 +1451,7 @@ tweet a {
   position: relative;
   padding: 0;
   margin: 0;
-  width: 70%;
+  width: 150%;
   height: 200px;
   background-color: var(--background);
   overflow: hidden;
