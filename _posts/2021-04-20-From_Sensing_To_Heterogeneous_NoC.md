@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: p2m_post
 read_time: true
 show_date: true
 title: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
