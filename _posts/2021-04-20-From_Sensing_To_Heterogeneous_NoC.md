@@ -11,10 +11,10 @@ author: Miao Sun
 description: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
 ---
 <!-- PDF generation  -->
-# Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design
+<!-- # Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design
 <div align="center">
-  <img src="https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210420/frontpage.png?raw=true?raw=true" width="800" height="240">
-</div>
+  <img src="https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210420/frontpage.png?raw=true?raw=true" width="800" height="240"> -->
+<!-- </div> -->
 <!-- PDF generation  -->
 
 In recent decades, smart sensing technology has evolved considerably to meet performance demands and address resource limitations in edge devices. This evolution has shifted from traditional separate Sensor-NPU-CPU architectures [1-2] to in-sensor processing [3]. However, data movement between the sensor and peripheral logic continues to incur substantial energy and bandwidth costs. With the increasing deployment of AI on edge devices, lightweight neural networks for tasks like object classification, eye tracking, and hand gesture recognition are becoming viable for intelligent devices. For energy-sensitive applications such as smart rings and wearable glasses, an energy-efficient sensing system is crucial.
