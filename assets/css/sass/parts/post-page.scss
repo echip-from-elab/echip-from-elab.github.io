@@ -70,24 +70,15 @@ span#github-btn {
   position: relative;
   padding: 0;
   margin: 0;
-  width: 150%;
   height: 100px;
   background-color: $white;
   overflow: hidden;
 
-  // .cover-image {
-  //   height: 100%;
-  //   width: 100%;
-  // }
   .cover-image {
-    position: relative;
-  padding: 0;
-  margin: 0;
-  width: 150%;
-  height: 300px;
-  background-color: $white;
-  overflow: hidden;
+    height: 100%;
+    width: 100%;
   }
+
 
 
 }
