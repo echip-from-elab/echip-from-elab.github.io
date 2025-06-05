@@ -4,7 +4,7 @@ read_time: true
 show_date: true
 title: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
 date: 2025/05/06
-img: posts/20210420/post8-rembrandt.jpg
+img: posts/20210420/frontpage.jpg
 tags: [copyright, creativity, neural networks, machine learning, artificial intelligence]
 category: opinion
 author: Miao Sun
