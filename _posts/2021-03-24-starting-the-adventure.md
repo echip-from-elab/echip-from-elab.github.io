@@ -11,13 +11,12 @@ author: Miao Sun
 description: "Midlife career change: a disaster or an opportunity?"
 ---
 
-
 <!-- PDF generation  -->
 <!-- # First Mamba chiplet in GF 22nm
 ![frontpage](https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210324/static_mamba.jpg?raw=true) -->
 <!-- PDF generation  -->
 
-The field of machine learning has seen a recent surge of interest in **State Space Model (SSM)**-based architectures for handling sequential data. For an extended period, **Transformer models** were the de facto standard in sequence modeling, lauded for their powerful representational abilities. However, the continuous expansion of model scales has highlighted a critical limitation: the Transformers' inherent quadratic complexity with respect to token length. This characteristic translates directly into considerable computational resource and energy consumption overhead, which has become a significant bottleneck for their continued development and deployment.
+The field of machine learning has seen a recent surge of interest in **State Space Model (SSM)**-based architectures for handling sequential data[1]. For an extended period, **Transformer models** were the de facto standard in sequence modeling, lauded for their powerful representational abilities[2]. However, the continuous expansion of model scales has highlighted a critical limitation: the Transformers' inherent quadratic complexity with respect to token length. This characteristic translates directly into considerable computational resource and energy consumption overhead, which has become a significant bottleneck for their continued development and deployment.
 
 Amidst these challenges, **Mamba**, a newly introduced sequence-to-sequence SSM architecture, has demonstrated exceptional capabilities, surpassing existing model frameworks. It not only achieves comparable accuracy to Transformer models on diverse tasks but also offers a substantial leap in computational efficiency, leading to significant reductions in training and inference costs.
 
@@ -28,7 +27,7 @@ Amidst these challenges, **Mamba**, a newly introduced sequence-to-sequence SSM 
 <center> Computational Complexity: D is the number of states and L is the sequence length. Transformers' complexity expands quadratically with the length of input tokens, while Mamba's complexity is linear.</center>
 
 <br>
-Leveraging their high computational intensity and robust sequential modeling capabilities, the Mamba family of architectures has found widespread application, ranging from lightweight detection tasks to large language models (LLMs). Recently, Alab21 launched a Mamba-Transformer-based hybrid LLM model, which strategically combines the attention mechanism of the Transformer with the SSM sequential modeling of Mamba.
+Leveraging their high computational intensity and robust sequential modeling capabilities, the Mamba family of architectures has found widespread application, ranging from lightweight detection tasks [3] to large language models (LLMs)[4]. Recently, Alab21 launched a Mamba-Transformer-based hybrid LLM model, which strategically combines the attention mechanism of the Transformer with the SSM sequential modeling of Mamba[5].
 
 However, despite Mamba's algorithmic breakthroughs, fully realizing its potential and ensuring broad applicability demands dedicated hardware acceleration. In this context, the research team led by [Prof. Umit Yusuf Ogras](https://elab.ece.wisc.edu/staff/ogras-umit/) and [Assistant Prof. Akhilesh Jaiswal](https://directory.engr.wisc.edu/ece/Faculty/Jaiswal_Akhilesh/) has developed the first ASIC-targeted Mamba-Chiplet, incorporating an accelerator specifically designed for SSM in sequence model processing. Diverging from traditional accelerator designs for Transformer blocks and CNNs, this work implements a dedicated pipeline for hidden state updating and serial scanning. Furthermore, to efficiently process the non-linear activation functions and exponent calculations inherent to the Mamba block, a hardware-friendly approximation optimization method is proposed to address associated computational and area overheads.
 
@@ -56,3 +55,11 @@ As part of our scale-up roadmap, a chiplet design featuring a CIM-based Mamba ac
   <img src="https://raw.githubusercontent.com/echip-from-elab/echip-from-elab.github.io/643a8e7e51cb50c9bde0ca8994eb8a66adefb1da/assets/img/posts/20210324/echip_v2.svg">
 </div>
 <center>The conception design of e-chip-V2.</center>
+
+<br>
+Reference<br>
+[1] Gu A, Dao T. Mamba: Linear-time sequence modeling with selective state spaces[J]. arXiv preprint arXiv:2312.00752, 2023.
+[2] Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need[J]. Advances in neural information processing systems, 2017, 30.
+[3] Wang Z, Li C, Xu H, et al. Mamba YOLO: SSMs-based YOLO for object detection[J]. arXiv preprint arXiv:2406.05835, 2024.
+[4] Glorioso P, Anthony Q, Tokpanov Y, et al. Zamba: A compact 7b ssm hybrid model[J]. arXiv preprint arXiv:2405.16712, 2024.
+[5] Lieber O, Lenz B, Bata H, et al. Jamba: A hybrid transformer-mamba language model[J]. arXiv preprint arXiv:2403.19887, 2024.
