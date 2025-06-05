@@ -4,12 +4,19 @@ read_time: true
 show_date: true
 title: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
 date: 2025/05/06
-img: posts/20210420/frontpage.jpg
+img: posts/20210420/frontpage.png
 tags: [processing-in-pixel-in-memory(P<sup>2</sup>M), artificial intelligence, energy-hungry, resource-constrianted devices SoC]
 category: opinion
 author: Miao Sun
 description: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
 ---
+<!-- PDF generation  -->
+# Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design
+<div align="center">
+  <img src="https://github.com/echip-from-elab/echip-from-elab.github.io/blob/main/assets/img/posts/20210420/frontpage.png?raw=true?raw=true" width="800" height="240">
+</div>
+<!-- PDF generation  -->
+
 In recent decades, smart sensing technology has evolved considerably to meet performance demands and address resource limitations in edge devices. This evolution has shifted from traditional separate Sensor-NPU-CPU architectures [1-2] to in-sensor processing [3]. However, data movement between the sensor and peripheral logic continues to incur substantial energy and bandwidth costs. With the increasing deployment of AI on edge devices, lightweight neural networks for tasks like object classification, eye tracking, and hand gesture recognition are becoming viable for intelligent devices. For energy-sensitive applications such as smart rings and wearable glasses, an energy-efficient sensing system is crucial.
 Therefore, the research group from UW-Madison ECE led by [Assistant Prof. Akhilesh Jaiswal](https://directory.engr.wisc.edu/ece/Faculty/Jaiswal_Akhilesh/) proposed the P2M paradigm, which enables processing-in-pixel-in-memory [4]. In collaboration with [Prof. Umit Yusuf Ogras](https://elab.ece.wisc.edu/staff/ogras-umit/), an integral SoC imaging system was designed and verified. This system features a P2M-based sensing front-end and minimizes resource overhead for completing the entire neural network using the small data output from the P2M sensor array. The design was sign-off verified in GF 22nm technology on May 1st. This approach enables  the initial layers of sensing and computation to be completed directly within the sensor array, eliminating the need to transfer data to off-sensor boundary logic. The trained weights for these first few network layers are mapped to specific transistor sizes within the pixel array. This design choice does not compromise the feasibility of downstream applications because the initial layers of modern CNNs typically function as high-level feature extractors, which are common across numerous vision tasks. As Fig. 1 depicts, relocating a portion of the neural network computation to the sensor array effectively reduces the area and power overhead associated with a standalone NPU, thereby easing the demands for NPU.
 <br>
@@ -43,8 +50,8 @@ Comparing standard models with P<sup>2</sup>M-implemented counterparts reveals s
 <center> Figure 4. Layout design of 3x3 P<sup>2</sup>M sensor array and integrated SoC. </center>
 <br>
 Reference<br>
-[1] Pinkham, R., Berkovich, A. & Zhang, Z. Near-sensor distributed dnn processing for augmented and virtual reality. IEEE J. Emerg. Sel. Top. Circuits Syst. 11, 663–676. https://doi.org/10.1109/JETCAS.2021.3121259 (2021).
-[2] Chen, Z. et al. Processing near sensor architecture in mixed-signal domain with CMOS image sensor of convolutional-kernelreadout method. IEEE Trans. Circuits Syst. I Regul. Pap. 67, 389–400 (2020).
-[3] Song, R., Huang, K., Wang, Z. & Shen, H. A reconfgurable convolution-in-pixel cmos image sensor architecture. IEEE Trans. Circuits Syst. Video Technol.https://doi.org/10.1109/TCSVT.2022.3179370 (2022).
-[4] Datta G, Kundu S, Yin Z, et al. A processing-in-pixel-in-memory paradigm for resource-constrained tinyml applications. Scientific Reports J, 2022, 12(1): 14396.
+[1] Pinkham, R., Berkovich, A. & Zhang, Z. Near-sensor distributed dnn processing for augmented and virtual reality. IEEE J. Emerg. Sel. Top. Circuits Syst. 11, 663–676. https://doi.org/10.1109/JETCAS.2021.3121259 (2021).<br>
+[2] Chen, Z. et al. Processing near sensor architecture in mixed-signal domain with CMOS image sensor of convolutional-kernelreadout method. IEEE Trans. Circuits Syst. I Regul. Pap. 67, 389–400 (2020).<br>
+[3] Song, R., Huang, K., Wang, Z. & Shen, H. A reconfgurable convolution-in-pixel cmos image sensor architecture. IEEE Trans. Circuits Syst. Video Technol.https://doi.org/10.1109/TCSVT.2022.3179370 (2022).<br>
+[4] Datta G, Kundu S, Yin Z, et al. A processing-in-pixel-in-memory paradigm for resource-constrained tinyml applications. Scientific Reports J, 2022, 12(1): 14396.<br>
 [5] Han, S., Lin, J., Wang, K., Wang, T. & Wu, Z. Solution to Visual Wakeup Words Challenge'19 (First Place). https://github.com/mithan-lab/VWW (2019).
