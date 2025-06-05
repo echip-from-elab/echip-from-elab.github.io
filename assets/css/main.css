@@ -1459,10 +1459,11 @@ tweet a {
           box-shadow: 0px 2px 4px var(--shadow);
   max-width: 800px;
 }
-/* full width image in posts */
+/* full width image in posts, miao */
 img[src$="#full"] {
     max-width: none;
-    width: 100vw;
+    width: 80%;
+    /* width: 100vw; */
 }
 /* Image captions
 Usage (in markdown):
