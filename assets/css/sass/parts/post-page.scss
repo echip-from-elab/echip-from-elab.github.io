@@ -65,7 +65,7 @@ span#github-btn {
 .page-buttons{
     margin-bottom: 1em;
 }
-
+// miao
 .page-image {
   position: relative;
   padding: 0;
@@ -74,10 +74,20 @@ span#github-btn {
   background-color: $white;
   overflow: hidden;
 
+  // .cover-image {
+  //   height: 100%;
+  //   width: 100%;
+  // }
   .cover-image {
-    height: 100%;
-    width: 100%;
+    position: relative;
+  padding: 0;
+  margin: 0;
+  height: 500px;
+  background-color: $white;
+  overflow: hidden;
   }
+
+
 }
 
 .page-content {
