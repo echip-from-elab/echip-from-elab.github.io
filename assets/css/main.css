@@ -1441,9 +1441,11 @@ tweet a {
   overflow: hidden;
 }
 
+/* miao */
 .page-image .cover-image {
   height: 100%;
   width: 80%;
+  /* width: 100%; */
 }
 
 .page-content {
@@ -1461,7 +1463,7 @@ tweet a {
 }
 /* full width image in posts */
 img[src$="#full"] {
-    max-width: none;
+    max-width: 80%;
     width: 100vw;
 }
 /* Image captions
