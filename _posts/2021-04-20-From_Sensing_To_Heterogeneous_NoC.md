@@ -2,16 +2,16 @@
 layout: post
 read_time: true
 show_date: true
-title: "Pave the way from P<sup>2</sup>M sensing paradigm to heterogenous SoC design"
-date: 2021-04-20
+title: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
+date: 2025/05/06
 img: posts/20210420/post8-rembrandt.jpg
 tags: [copyright, creativity, neural networks, machine learning, artificial intelligence]
 category: opinion
-author: Armando Maynez
-description: "Pave the way from resource-limited sensing technology to heterogenous SoC design"
+author: Miao Sun
+description: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
 ---
 In recent decades, smart sensing technology has evolved considerably to meet performance demands and address resource limitations in edge devices. This evolution has shifted from traditional separate Sensor-NPU-CPU architectures [1-2] to in-sensor processing [3]. However, data movement between the sensor and peripheral logic continues to incur substantial energy and bandwidth costs. With the increasing deployment of AI on edge devices, lightweight neural networks for tasks like object classification, eye tracking, and hand gesture recognition are becoming viable for intelligent devices. For energy-sensitive applications such as smart rings and wearable glasses, an energy-efficient sensing system is crucial.
-Therefore, reference [4] proposes the P<sup>2</sup>M paradigm, which enables processing-in-pixel-in-memory. This approach allows the initial layers of sensing and computation to be completed directly within the sensor array, eliminating the need to transfer data to off-chip boundary logic. The trained weights for these first few network layers are mapped to specific transistor sizes within the pixel array. This design choice does not compromise the feasibility of downstream applications, as the initial layers of modern CNNs typically function as high-level feature extractors, which are common across numerous vision tasks. As depicted in Fig. 1, by relocating a portion of the neural network computation to the sensor array, the system effectively reduces the area and power overhead associated with a standalone NPU, thereby easing NPU requirements.
+Therefore, the research group from UW-Madison ECE led by [Assistant Prof. Akhilesh Jaiswal](https://directory.engr.wisc.edu/ece/Faculty/Jaiswal_Akhilesh/) proposeed the P<sup>2</sup>M paradigm, which enables processing-in-pixel-in-memory [4]. This approach allows the initial layers of sensing and computation to be completed directly within the sensor array, eliminating the need to transfer data to off-chip boundary logic. The trained weights for these first few network layers are mapped to specific transistor sizes within the pixel array. This design choice does not compromise the feasibility of downstream applications, as the initial layers of modern CNNs typically function as high-level feature extractors, which are common across numerous vision tasks. As depicted in Fig. 1, by relocating a portion of the neural network computation to the sensor array, the system effectively reduces the area and power overhead associated with a standalone NPU, thereby easing NPU requirements.
 
 <div align="center">
   <img src="https://github.com/echip-from-elab/echip-from-elab.github.io/blob/4b43623669c85fceff6b7f999af56577153d213c/assets/img/posts/20210420/p2m_fig1.png?raw=true" width="400" height="150">
