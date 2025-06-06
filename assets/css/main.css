@@ -1436,8 +1436,7 @@ tweet a {
   position: relative;
   padding: 0;
   margin: 0;
-  height: 300px;
-  width: 700px;
+  height: 400px;
   background-color: var(--background);
   overflow: hidden;
 }
@@ -1445,7 +1444,7 @@ tweet a {
 /* miao */
 .page-image .cover-image {
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 
