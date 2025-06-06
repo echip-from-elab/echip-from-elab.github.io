@@ -5,10 +5,10 @@ show_date: true
 title: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
 date: 2025/05/06
 img: posts/20210420/frontpage.png
-tags: [processing-in-pixel-in-memory(P<sup>2</sup>M), artificial intelligence, energy-hungry, resource-constrianted devices SoC]
+tags: [processing-in-pixel-in-memory(P2M), artificial intelligence, energy-hungry, resource-constrianted devices SoC]
 category: opinion
 author: Miao Sun
-description: "Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design"
+description: "Paving the way from the P2M sensing paradigm to heterogeneous SoC design"
 ---
 <!-- PDF generation  -->
 <!-- # Paving the way from the P<sup>2</sup>M sensing paradigm to heterogeneous SoC design
